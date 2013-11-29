@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% set location = 'blog' %}
+
+{% block content %}
+    {% for post in posts %}
+    <div class='post-teaser'>
+        <h2><a href="{{ get_url(post.url) }}">{{ post.title }}</a></h1>
+        <h3><span class='tagline'>{{ post.tagline }}</span></h3>
+        <span class='date'>{{ post.date }}</span>
+    </div>
+    {% endfor %}
+    <p class="rss" /><span class="small"><a href="feed.xml">RSS</a></span>
+{% endblock %}

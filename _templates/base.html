@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>{% block title %}samelog{% endblock %}</title>
+    <link rel='stylesheet' href='http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css'>
+    <link rel='stylesheet' href='{{ get_asset('css/pygments.css') }}'>
+    <link rel='stylesheet' href='{{ get_asset('css/typography.css') }}'>
+    <link rel='stylesheet' href='{{ get_asset('css/screen.css') }}'>
+</head>
+<body>
+    <div class='container'>
+        <div class='header'>
+            <a href="/"><div class='logo'></div></a>
+        </div>
+        <div class='content clearfix'>
+        {% block content %}
+        {% endblock %}
+     </div>
+     <!-- begin google analytics -->
+     <script type="text/javascript">
+       var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-33907216-1']);
+       _gaq.push(['_trackPageview']);
+       (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+     </script>
+     <!-- end google analytics -->
+    </div>
+</body>
+</html>

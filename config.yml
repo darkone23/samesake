@@ -1,0 +1,15 @@
+base_url: log/
+domain: samesake.com
+
+# Used in header meta tags and the site feed.
+author: Thomas Omans
+# A description of your site to be used in header meta tags.
+description: musings of a curious dev
+# Used in the site feed.
+email: thomas.omans@gmail.com   
+# Your site's subtitle.
+subtitle: Nothing is forbidden, everything is permitted.
+# Your site's title.
+title: samesake.com
+
+feed: true
